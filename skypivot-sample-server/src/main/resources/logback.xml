@@ -5,6 +5,9 @@
     <property name="LOG_HOME" value="/data/deploy/logs" />
     <property name="LOG_FILE_NAME" value="skypivot_sample" />
 
+    <!--读取spring配置文件的变量-->
+    <springProperty name="LOG_LEVEL" source="custom.logger.level"/>
+
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d{ISO8601} [%thread] [%X{traceId}] %-5level %logger{36}.%M:%L - %msg%n</pattern>
@@ -39,7 +42,7 @@
         </filter>
     </appender>
 
-    <logger name="com.ifyou.skypivot" level="debug" />
+    <logger name="com.ifyou.skypivot" level="${LOG_LEVEL}" />
 
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
