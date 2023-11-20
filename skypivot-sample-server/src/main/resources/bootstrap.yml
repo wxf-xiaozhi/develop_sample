@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: sample
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDR:10.66.146.37}:${NACOS_PORT:8849}
+        username: ${NACOS_USERNAME:nacos}
+        password: ${NACOS_PASSWORD:ifyou#2022}
+      config:
+        server-addr: ${NACOS_ADDR:10.66.146.37}:${NACOS_PORT:8849}
+        file-extension: ${FILE_EXTENSION:yaml}
+        namespace: ${NAMESPACE:dev}
+        group: ${GROUP_NAME:DEV_GROUP}
+        username: ${NACOS_USERNAME:nacos}
+        password: ${NACOS_PASSWORD:ifyou#2022}
+        ext-config:
+          group: ${GROUP_NAME:DEV_GROUP}
+          enabled: ${NACOS_ENABLED:true}
+          refresh: ${REFRESH:true}
+  boot:
+    admin:
+      client:
+        url: localhost:5001
+        username: admin
+        password: admin
+        instance:
+          prefer-ip: true
+
+management:
+  health:
+    redis:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  config:
+    feign: DEBUG
+
+customLoadbalancer:
+  # 自定义负载均衡功能开关
+  isOpen: true
+  # 此环境请求默认要走的服务器ip
+  defaultIp: 10.66.146.37
