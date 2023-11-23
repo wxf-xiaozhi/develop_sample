@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<configuration>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径-->
-    <property name="LOG_HOME" value="/data/deploy/logs" />
-    <property name="LOG_FILE_NAME" value="skypivot_sample" />
+    <property name="LOG_HOME" value="./logs/develop_sample" />
+    <property name="LOG_FILE_NAME" value="develop_sample" />
 
     <!--读取spring配置文件的变量-->
-    <springProperty name="LOG_LEVEL" source="custom.logger.level"/>
+    <springProperty name="loggerLevel" source="logger.level"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -42,7 +42,12 @@
         </filter>
     </appender>
 
-    <logger name="com.ifyou.skypivot" level="${LOG_LEVEL}" />
+    <logger name="com.ifyou.skypivot" level="${loggerLevel}" />
+
+    <!-- JPA日志级别控制，必须这样配置 showSql一起用  -->
+    <!--    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"  />-->
+    <!--    <logger name="org.hibernate.SQL" level="info" />-->
+    <!--    <logger name="org.hibernate.engine.QueryParameters" level="info" />-->
 
     <root level="INFO">
         <appender-ref ref="STDOUT"/>

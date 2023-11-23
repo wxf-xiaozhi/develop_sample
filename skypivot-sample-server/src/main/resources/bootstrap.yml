@@ -24,6 +24,8 @@ spring:
         password: admin
         instance:
           prefer-ip: true
+#logging:
+#  config: http://${NACOS_ADDR:10.66.146.37}/nacos/v1/cs/configs?tenant=${NAMESPACE}&username=${NACOS_USERNAME:nacos}&password=${NACOS_PASSWORD:ifyou#2022}&dataId=develop_sample_logback.xml.xml
 
 management:
   health:
@@ -36,10 +38,12 @@ management:
     web:
       exposure:
         include: "*"
-#logging:
-#  config:
+
+
+logging:
+  config: classpath:logback.xml
 #    feign: DEBUG
-#
+
 #customLoadbalancer:
 #  # 自定义负载均衡功能开关
 #  isOpen: true
