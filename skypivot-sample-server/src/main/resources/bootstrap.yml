@@ -41,7 +41,7 @@ management:
 
 
 logging:
-  config: classpath:logback.xml
+  config: classpath:logback-spring.xml
 #    feign: DEBUG
 
 #customLoadbalancer:
