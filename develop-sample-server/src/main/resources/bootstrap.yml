@@ -27,6 +27,7 @@ spring:
 #logging:
 #  config: http://${NACOS_ADDR:10.66.146.37}/nacos/v1/cs/configs?tenant=${NAMESPACE}&username=${NACOS_USERNAME:nacos}&password=${NACOS_PASSWORD:ifyou#2022}&dataId=develop_sample_logback.xml.xml
 
+
 management:
   health:
     redis:
