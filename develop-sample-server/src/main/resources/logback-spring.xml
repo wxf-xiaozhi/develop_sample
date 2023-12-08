@@ -42,7 +42,11 @@
         </filter>
     </appender>
 
-    <logger name="com.sxnd.develop" level="${loggerLevel}" />
+    <logger name="com.ifyou.skypivot.sample" level="debug" />
+
+    <logger name="com.sxnd.develop" level="debug" />
+
+
 
     <!-- JPA日志级别控制，必须这样配置 showSql一起用  -->
     <!--    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"  />-->

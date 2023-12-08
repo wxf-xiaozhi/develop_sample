@@ -2,8 +2,8 @@ package com.sxnd.develop.sample.api;
 
 
 import com.ifyou.skypivot.controller.feign.ControllerFeignClient;
-import com.ifyou.skypivot.framework.entity.ResponseResult;
-import com.sxnd.develop.sample.feign.SampleFeignClient;
+import com.ifyou.skypivot.sample.feign.SkypivotSampleFeignClient;
+import com.sxnd.develop.framework.entity.ResponseResult;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +25,7 @@ public class HealthController {
     ControllerFeignClient controllerFeignClient;
 
     @Autowired
-    SampleFeignClient sampleFeignClient;
+    SkypivotSampleFeignClient sampleFeignClient;
 
 
     @Autowired

@@ -1,6 +1,6 @@
 spring:
   application:
-    name: develop_sample
+    name: developSample
   cloud:
     nacos:
       discovery:

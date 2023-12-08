@@ -38,7 +38,6 @@
         <hdmap.version>2.2.26.0-SNAPSHOT</hdmap.version>
         <base.version>2.2.26.0-SNAPSHOT</base.version>
         <iot.version>2.2.26.0-SNAPSHOT</iot.version>
-        <controller.version>2.2.26.1-SNAPSHOT</controller.version>
         <thingsboard.version>2.2.26.0-SNAPSHOT</thingsboard.version>
         <develop-framework.version>3.0.0-SNAPSHOT</develop-framework.version>
         <skypivot-utils.version>3.0.2-SNAPSHOT</skypivot-utils.version>

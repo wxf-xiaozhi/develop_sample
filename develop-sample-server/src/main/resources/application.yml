@@ -38,8 +38,8 @@ custom:
     # 自定义服务请求功能开启
     customfeign: true
     # feign调用的tranceID功能开启
-    tranceId: true
+    tranceId: false
 
  # 防止污染线上环境请求功能开启
-  loadbalancer:
-    defaultIp: 10.66.146.37
+loadbalancer:
+  defaultIp: 10.66.146.37
