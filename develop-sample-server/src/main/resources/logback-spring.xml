@@ -6,7 +6,7 @@
     <property name="LOG_FILE_NAME" value="develop_sample" />
 
     <!--读取spring配置文件的变量-->
-    <springProperty name="loggerLevel" source="logger.level"/>
+    <springProperty name="loggerLevel" source="logger.level" defaultValue="debug"/>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>

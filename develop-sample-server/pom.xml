@@ -55,9 +55,27 @@
         </dependency>
 
         <dependency>
-            <groupId>com.ifyou.skypivot.framework</groupId>
-            <artifactId>skypivot-framework-integration</artifactId>
-            <version>${skypivot-framework.version}</version>
+            <groupId>com.ifyou.skypivot</groupId>
+            <artifactId>skypivot-controller-interface</artifactId>
+            <version>${skypivot.controller.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.ifyou.skypivot</groupId>
+                    <artifactId>skypivot-hdmap-common</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.ifyou.skypivot</groupId>
+            <artifactId>skypivot-sample-interface</artifactId>
+            <version>${skypivot.sample.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sxnd.develop.framework</groupId>
+            <artifactId>develop-framework-integration</artifactId>
+            <version>${develop-framework.version}</version>
         </dependency>
 
 

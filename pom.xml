@@ -40,10 +40,11 @@
         <iot.version>2.2.26.0-SNAPSHOT</iot.version>
         <controller.version>2.2.26.1-SNAPSHOT</controller.version>
         <thingsboard.version>2.2.26.0-SNAPSHOT</thingsboard.version>
-        <skypivot-common.version>2.0.4-SNAPSHOT</skypivot-common.version>
-        <skypivot-framework.version>2.0.7-SNAPSHOT</skypivot-framework.version>
-        <skypivot-starer.version>3.0.2-SNAPSHOT</skypivot-starer.version>
+        <develop-framework.version>3.0.0-SNAPSHOT</develop-framework.version>
         <skypivot-utils.version>3.0.2-SNAPSHOT</skypivot-utils.version>
+        <skypivot.sample.version>2.0.0-SNAPSHOT</skypivot.sample.version>
+        <skypivot.controller.version>2.2.27.0-SNAPSHOT</skypivot.controller.version>
+
 
         <spring-boot-maven-plugin.version>2.7.16</spring-boot-maven-plugin.version>
         <spring-cloud.version>2021.0.8</spring-cloud.version>

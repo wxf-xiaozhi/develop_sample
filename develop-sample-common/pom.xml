@@ -30,9 +30,9 @@
 
         <!--skypivot基础依赖-->
         <dependency>
-            <groupId>com.ifyou.skypivot.framework</groupId>
-            <artifactId>skypivot-framework-common</artifactId>
-            <version>${skypivot-framework.version}</version>
+            <groupId>com.sxnd.develop.framework</groupId>
+            <artifactId>develop-framework-common</artifactId>
+            <version>${develop-framework.version}</version>
             <exclusions>
                 <exclusion>
                     <artifactId>guava</artifactId>

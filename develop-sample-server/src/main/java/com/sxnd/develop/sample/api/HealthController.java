@@ -3,6 +3,7 @@ package com.sxnd.develop.sample.api;
 
 import com.ifyou.skypivot.controller.feign.ControllerFeignClient;
 import com.ifyou.skypivot.framework.entity.ResponseResult;
+import com.sxnd.develop.sample.feign.SampleFeignClient;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,9 @@ public class HealthController {
     @Autowired
     ControllerFeignClient controllerFeignClient;
 
+    @Autowired
+    SampleFeignClient sampleFeignClient;
+
 
     @Autowired
     private RedissonClient redisson;
@@ -35,6 +39,13 @@ public class HealthController {
         return ResponseResult.Success(str);
     }
 
+    @GetMapping("/saySampleHello")
+    public ResponseResult<String> saySampleHello(){
+        String str = "Yeah, is me ! ["+serverName+"]";
+        log.info(str);
+        sampleFeignClient.sayHello();
+        return ResponseResult.Success(str);
+    }
 
 
 
