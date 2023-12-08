@@ -3,7 +3,7 @@ package com.sxnd.develop.sample.infrastructure.persistence.entity;
 
 
 import com.sxnd.develop.sample.constants.ModelConstants;
-import com.sxnd.develop.sample.common.enums.RouteTypeEnum;
+import com.sxnd.develop.sample.enums.RouteTypeEnum;
 import com.sxnd.develop.sample.infrastructure.util.UUIDConverter;
 import com.sxnd.develop.sample.infrastructure.util.mapping.JsonStringType;
 import com.sxnd.develop.sample.model.StageRouteFile;

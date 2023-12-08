@@ -3,14 +3,14 @@ spring:
     redisson:
       file: classpath:redisson.yml
   rabbitmq:
-    addresses: 10.66.146.37:5673
+    addresses: 127.0.0.1:5673
     #port: 5673
     username: admin
-    password: ifyou#2022
+    password: admin
     virtual-host: /
   datasource:
     driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://10.66.146.37:5433/thingsboardv23_2
+    url: jdbc:postgresql://127.0.0.1:5433/thingsboardv23_2
     username: postgres
     password: ifyou#2022
     hikari:

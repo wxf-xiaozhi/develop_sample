@@ -3,7 +3,7 @@ package com.sxnd.develop.sample.infrastructure.persistence.dao;
 
 
 
-import com.sxnd.develop.sample.common.enums.RouteTypeEnum;
+import com.sxnd.develop.sample.enums.RouteTypeEnum;
 import com.sxnd.develop.sample.model.StageRouteFile;
 
 import java.util.List;

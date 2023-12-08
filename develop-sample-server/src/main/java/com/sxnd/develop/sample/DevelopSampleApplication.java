@@ -14,7 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @date 2023年09月22日
  * @version: 1.0
  */
-@ComponentScan(basePackages = {"com.ifyou.skypivot.sample.**"})
+@ComponentScan(basePackages = {"com.sxnd.develop.sample.**"})
 @EnableFeignClients(basePackages ={"com.ifyou.skypivot.**"})
 @EnableDiscoveryClient
 @SpringBootApplication

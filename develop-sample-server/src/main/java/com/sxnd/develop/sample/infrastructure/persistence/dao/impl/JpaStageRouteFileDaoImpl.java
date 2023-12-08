@@ -3,7 +3,7 @@ package com.sxnd.develop.sample.infrastructure.persistence.dao.impl;
 
 
 
-import com.sxnd.develop.sample.common.enums.RouteTypeEnum;
+import com.sxnd.develop.sample.enums.RouteTypeEnum;
 import com.sxnd.develop.sample.infrastructure.util.DaoUtil;
 import com.sxnd.develop.sample.utils.SqlDao;
 import com.sxnd.develop.sample.infrastructure.persistence.dao.StageRouteFileDao;
