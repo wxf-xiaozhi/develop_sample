@@ -35,7 +35,7 @@ public class HealthController {
     public ResponseResult<String> sayHello(){
         String str = "Yeah, is me ! ["+serverName+"]";
         log.info(str);
-        controllerFeignClient.sayHello();
+//        controllerFeignClient.sayHello();
         return ResponseResult.Success(str);
     }
 

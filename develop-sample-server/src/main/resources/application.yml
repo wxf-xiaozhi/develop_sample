@@ -34,11 +34,14 @@ custom:
     # 通用的feignconfig功能开启
     isOpen: true
     # feign调用的日志级别配置
-    loggerLevel: FULL
+    loggerFormat: BASIC
     # 自定义服务请求功能开启
     customfeign: true
     # feign调用的tranceID功能开启
     tranceId: false
+    # feign日志级别
+    loggerLevel: info
+
 
  # 防止污染线上环境请求功能开启
 loadbalancer:
