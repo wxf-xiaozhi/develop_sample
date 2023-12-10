@@ -57,8 +57,6 @@
         <cassandra.version>3.5.0</cassandra.version>
         <fast2.version>2.0.42</fast2.version>
         <postgresql.version>42.2.5</postgresql.version>
-
-
     </properties>
 
     <profiles>
