@@ -1,7 +1,7 @@
 # sample服务
 
 此项目为微服务拆分基础样板工程，新建微服务可从本工程拉区代码，基于此工程进行二开
-启动添加参数 -DNACOS_ADDR=10.66.149.101 -DNAMESPACE=local -Dcustom.log.level=debug
+启动添加参数 -DNACOS_ADDR=127.0.0.1 -DNAMESPACE=local -Dcustom.log.level=debug
 
 
 #开源框架版本
