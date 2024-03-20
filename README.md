@@ -36,5 +36,5 @@ nacos 2.0.3
 #### 实现了基于maven插件（flatten-maven-plugin）对于模块版本的统一管理，减少修改版本号所要修改的文件
 
 # 后续计划
-##集成事件驱动开源框架 spring-cloud-stream
+##  集成事件驱动开源框架 spring-cloud-stream
     spring-cloud-stream（支持多种中间件 rabbitMQ kafka等）
