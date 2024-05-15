@@ -7,7 +7,7 @@ singleServerConfig:
   #password: ifyou#2022
   subscriptionsPerConnection: 5
   clientName: null
-  address: "redis://127.0.0.1:6380"
+  address: "redis://127.0.0.1:6369"
   subscriptionConnectionMinimumIdleSize: 1
   subscriptionConnectionPoolSize: 50
   connectionMinimumIdleSize: 24

@@ -9,10 +9,10 @@ spring:
     password: admin
     virtual-host: /
   datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5433/thingsboardv23_2
-    username: postgres
-    password: ifyou#2022
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: 123456
     hikari:
       #连接池名
       pool-name: DateHikariCP

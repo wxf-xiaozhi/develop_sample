@@ -15,6 +15,10 @@
         <kaptcha.version>0.0.9</kaptcha.version>
         <okhttp3.version>4.8.1</okhttp3.version>
         <jackson.version>2.12.3</jackson.version>
+        <mybatis.plus>3.5.5</mybatis.plus>
+        <mysql.connect.java>8.0.27</mysql.connect.java>
+        <mysql-connector-j>8.0.33</mysql-connector-j>
+<!--        <druid.version>1.2.14</druid.version>-->
     </properties>
 
     <build>
@@ -128,15 +132,18 @@
             <artifactId>redisson-spring-boot-starter</artifactId>
         </dependency>
 
-        <!--jpa-->
+        <!--mybatis-plus-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis.plus}</version>
         </dependency>
 
+        <!--mysql-->
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-commons</artifactId>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connect.java}</version>
         </dependency>
 
         <!-- Cassandra是一套开源分布式NoSQL数据库系统-->
@@ -166,8 +173,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-
 
 
         <!--rabbitMQ相关依赖-->

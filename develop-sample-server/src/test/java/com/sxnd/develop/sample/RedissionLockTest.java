@@ -1,6 +1,5 @@
-package com.ifyou.skypivot.controller;
+package com.sxnd.develop.sample;
 
-import com.sxnd.develop.sample.DevelopSampleApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.redisson.api.RLock;

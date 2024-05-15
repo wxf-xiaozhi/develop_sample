@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
  * @version: 1.0
  */
 @ComponentScan(basePackages = {"com.sxnd.develop.sample.**"})
-@EnableFeignClients(basePackages ={"com.ifyou.skypivot.**","com.sxnd.develop.**"})
+@EnableFeignClients(basePackages ={"com.sxnd.develop.**","com.sxnd.develop.**"})
 @EnableDiscoveryClient
 @SpringBootApplication
 @Slf4j
