@@ -4,15 +4,15 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: ${NACOS_ADDR:10.66.146.37}:${NACOS_PORT:8849}
+        server-addr: ${NACOS_ADDR:127.0.0.1}:${NACOS_PORT:8849}
         username: ${NACOS_USERNAME:nacos}
-        password: ${NACOS_PASSWORD:ifyou#2022}
+        password: ${NACOS_PASSWORD:nacos}
       config:
-        server-addr: ${NACOS_ADDR:10.66.146.37}:${NACOS_PORT:8849}
+        server-addr: ${NACOS_ADDR:127.0.0.1}:${NACOS_PORT:8849}
         file-extension: ${FILE_EXTENSION:yaml}
         namespace: ${NAMESPACE:dev}
         username: ${NACOS_USERNAME:nacos}
-        password: ${NACOS_PASSWORD:ifyou#2022}
+        password: ${NACOS_PASSWORD:nacos}
         ext-config:
           enabled: ${NACOS_ENABLED:true}
           refresh: ${REFRESH:true}
