@@ -22,7 +22,7 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>com.snxd.develop</groupId>
+            <groupId>com.sxnd.develop</groupId>
             <artifactId>develop-sample-common</artifactId>
             <version>${revision}</version>
         </dependency>

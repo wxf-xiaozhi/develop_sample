@@ -340,19 +340,19 @@
     </dependencyManagement>
 
     <repositories>
-        <repository>
-            <id>nexus-changcheng</id>
-            <name>local gwm private nexus</name>
-            <url>http://nexus.gwm.cn/repository/maven-public/</url>
-            <releases>
-                <updatePolicy>always</updatePolicy>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <updatePolicy>always</updatePolicy>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
+<!--        <repository>-->
+<!--            <id>nexus-changcheng</id>-->
+<!--            <name>local gwm private nexus</name>-->
+<!--            <url>http://nexus.gwm.cn/repository/maven-public/</url>-->
+<!--            <releases>-->
+<!--                <updatePolicy>always</updatePolicy>-->
+<!--                <enabled>true</enabled>-->
+<!--            </releases>-->
+<!--            <snapshots>-->
+<!--                <updatePolicy>always</updatePolicy>-->
+<!--                <enabled>true</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
         <repository>
             <id>central</id>
             <url>https://repo1.maven.org/maven2/</url>
@@ -393,18 +393,18 @@
     </repositories>
 
     <!--定义snapshots库和releases库的nexus地址-->
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>maven-releases</name>
-            <url>https://nexus.gwm.cn/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>maven-snapshots</name>
-            <url>https://nexus.gwm.cn/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>maven-releases</id>-->
+<!--            <name>maven-releases</name>-->
+<!--            <url>https://nexus.gwm.cn/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>maven-snapshots</id>-->
+<!--            <name>maven-snapshots</name>-->
+<!--            <url>https://nexus.gwm.cn/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
 
 
 </project>

@@ -28,7 +28,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
-        <finalName>skypivot-sample-server</finalName>
+        <finalName>develop-sample-server</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -49,28 +49,23 @@
     <dependencies>
 
         <dependency>
-            <groupId>com.snxd.develop</groupId>
+            <groupId>com.sxnd.develop</groupId>
             <artifactId>develop-sample-interface</artifactId>
             <version>${revision}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.ifyou.skypivot</groupId>
-            <artifactId>skypivot-controller-interface</artifactId>
-            <version>${skypivot.controller.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.ifyou.skypivot</groupId>
-                    <artifactId>skypivot-hdmap-common</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.ifyou.skypivot</groupId>-->
+<!--            <artifactId>skypivot-controller-interface</artifactId>-->
+<!--            <version>${skypivot.controller.version}</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.ifyou.skypivot</groupId>-->
+<!--                    <artifactId>skypivot-hdmap-common</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.ifyou.skypivot</groupId>
-            <artifactId>skypivot-sample-interface</artifactId>
-            <version>${skypivot.sample.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>com.sxnd.develop.framework</groupId>
@@ -202,17 +197,17 @@
             <artifactId>postgresql</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.ifyou.skypivot</groupId>
-            <artifactId>skypivot-controller-interface</artifactId>
-            <version>${skypivot.controller.version}</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>guava</artifactId>
-                    <groupId>com.google.guava</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.ifyou.skypivot</groupId>-->
+<!--            <artifactId>skypivot-controller-interface</artifactId>-->
+<!--            <version>${skypivot.controller.version}</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <artifactId>guava</artifactId>-->
+<!--                    <groupId>com.google.guava</groupId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
 
 
 
