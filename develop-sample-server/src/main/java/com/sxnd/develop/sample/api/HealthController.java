@@ -2,13 +2,14 @@ package com.sxnd.develop.sample.api;
 
 
 import com.sxnd.develop.framework.entity.ResponseResult;
+import com.sxnd.develop.sample.model.param.MyParam;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @Slf4j
 @RestController
@@ -44,7 +45,12 @@ public class HealthController {
 //        sampleFeignClient.sayHello();
 //        return ResponseResult.Success(str);
 //    }
-
+    @PostMapping("/testValidate")
+    public ResponseResult<String> testValidate(@Valid @RequestBody MyParam param){
+        String str = "Yeah, is me ! ["+serverName+"]";
+        log.info(str);
+        return ResponseResult.Success(str);
+    }
 
 
 
